@@ -13,6 +13,7 @@
 		A5A7885E160C59E10070F25F /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = A5A7885C160C59E10070F25F /* Credits.rtf */; };
 		A5A78861160C59E10070F25F /* DHDAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A5A78860160C59E10070F25F /* DHDAppDelegate.m */; };
 		A5A78864160C59E10070F25F /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5A78862160C59E10070F25F /* MainMenu.xib */; };
+		A5A78893160C5A270070F25F /* DHDSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = A5A78892160C5A270070F25F /* DHDSlider.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,8 @@
 		A5A7885F160C59E10070F25F /* DHDAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DHDAppDelegate.h; sourceTree = "<group>"; };
 		A5A78860160C59E10070F25F /* DHDAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DHDAppDelegate.m; sourceTree = "<group>"; };
 		A5A78863160C59E10070F25F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		A5A78891160C5A270070F25F /* DHDSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DHDSlider.h; sourceTree = "<group>"; };
+		A5A78892160C5A270070F25F /* DHDSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DHDSlider.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +89,8 @@
 				A5A78860160C59E10070F25F /* DHDAppDelegate.m */,
 				A5A78862160C59E10070F25F /* MainMenu.xib */,
 				A5A78854160C59E10070F25F /* Supporting Files */,
+				A5A78891160C5A270070F25F /* DHDSlider.h */,
+				A5A78892160C5A270070F25F /* DHDSlider.m */,
 			);
 			path = CoreAnimationSlider;
 			sourceTree = "<group>";
@@ -169,6 +174,7 @@
 			files = (
 				A5A7885A160C59E10070F25F /* main.m in Sources */,
 				A5A78861160C59E10070F25F /* DHDAppDelegate.m in Sources */,
+				A5A78893160C5A270070F25F /* DHDSlider.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
