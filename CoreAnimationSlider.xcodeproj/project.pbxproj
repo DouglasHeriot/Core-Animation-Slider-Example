@@ -1,0 +1,305 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A5A7884E160C59E10070F25F /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5A7884D160C59E10070F25F /* Cocoa.framework */; };
+		A5A78858160C59E10070F25F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A5A78856160C59E10070F25F /* InfoPlist.strings */; };
+		A5A7885A160C59E10070F25F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A5A78859160C59E10070F25F /* main.m */; };
+		A5A7885E160C59E10070F25F /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = A5A7885C160C59E10070F25F /* Credits.rtf */; };
+		A5A78861160C59E10070F25F /* DHDAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A5A78860160C59E10070F25F /* DHDAppDelegate.m */; };
+		A5A78864160C59E10070F25F /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5A78862160C59E10070F25F /* MainMenu.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A5A78849160C59E10070F25F /* CoreAnimationSlider.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreAnimationSlider.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5A7884D160C59E10070F25F /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		A5A78850160C59E10070F25F /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		A5A78851160C59E10070F25F /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		A5A78852160C59E10070F25F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A5A78855160C59E10070F25F /* CoreAnimationSlider-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CoreAnimationSlider-Info.plist"; sourceTree = "<group>"; };
+		A5A78857160C59E10070F25F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A5A78859160C59E10070F25F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A5A7885B160C59E10070F25F /* CoreAnimationSlider-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CoreAnimationSlider-Prefix.pch"; sourceTree = "<group>"; };
+		A5A7885D160C59E10070F25F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		A5A7885F160C59E10070F25F /* DHDAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DHDAppDelegate.h; sourceTree = "<group>"; };
+		A5A78860160C59E10070F25F /* DHDAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DHDAppDelegate.m; sourceTree = "<group>"; };
+		A5A78863160C59E10070F25F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A5A78846160C59E10070F25F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5A7884E160C59E10070F25F /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A5A7883E160C59E10070F25F = {
+			isa = PBXGroup;
+			children = (
+				A5A78853160C59E10070F25F /* CoreAnimationSlider */,
+				A5A7884C160C59E10070F25F /* Frameworks */,
+				A5A7884A160C59E10070F25F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A5A7884A160C59E10070F25F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A5A78849160C59E10070F25F /* CoreAnimationSlider.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A5A7884C160C59E10070F25F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A5A7884D160C59E10070F25F /* Cocoa.framework */,
+				A5A7884F160C59E10070F25F /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A5A7884F160C59E10070F25F /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A5A78850160C59E10070F25F /* AppKit.framework */,
+				A5A78851160C59E10070F25F /* CoreData.framework */,
+				A5A78852160C59E10070F25F /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		A5A78853160C59E10070F25F /* CoreAnimationSlider */ = {
+			isa = PBXGroup;
+			children = (
+				A5A7885F160C59E10070F25F /* DHDAppDelegate.h */,
+				A5A78860160C59E10070F25F /* DHDAppDelegate.m */,
+				A5A78862160C59E10070F25F /* MainMenu.xib */,
+				A5A78854160C59E10070F25F /* Supporting Files */,
+			);
+			path = CoreAnimationSlider;
+			sourceTree = "<group>";
+		};
+		A5A78854160C59E10070F25F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A5A78855160C59E10070F25F /* CoreAnimationSlider-Info.plist */,
+				A5A78856160C59E10070F25F /* InfoPlist.strings */,
+				A5A78859160C59E10070F25F /* main.m */,
+				A5A7885B160C59E10070F25F /* CoreAnimationSlider-Prefix.pch */,
+				A5A7885C160C59E10070F25F /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A5A78848160C59E10070F25F /* CoreAnimationSlider */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5A78867160C59E10070F25F /* Build configuration list for PBXNativeTarget "CoreAnimationSlider" */;
+			buildPhases = (
+				A5A78845160C59E10070F25F /* Sources */,
+				A5A78846160C59E10070F25F /* Frameworks */,
+				A5A78847160C59E10070F25F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CoreAnimationSlider;
+			productName = CoreAnimationSlider;
+			productReference = A5A78849160C59E10070F25F /* CoreAnimationSlider.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A5A78840160C59E10070F25F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = DHD;
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Douglas Heriot";
+			};
+			buildConfigurationList = A5A78843160C59E10070F25F /* Build configuration list for PBXProject "CoreAnimationSlider" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = A5A7883E160C59E10070F25F;
+			productRefGroup = A5A7884A160C59E10070F25F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A5A78848160C59E10070F25F /* CoreAnimationSlider */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A5A78847160C59E10070F25F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5A78858160C59E10070F25F /* InfoPlist.strings in Resources */,
+				A5A7885E160C59E10070F25F /* Credits.rtf in Resources */,
+				A5A78864160C59E10070F25F /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A5A78845160C59E10070F25F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5A7885A160C59E10070F25F /* main.m in Sources */,
+				A5A78861160C59E10070F25F /* DHDAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A5A78856160C59E10070F25F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A5A78857160C59E10070F25F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		A5A7885C160C59E10070F25F /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A5A7885D160C59E10070F25F /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		A5A78862160C59E10070F25F /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A5A78863160C59E10070F25F /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A5A78865160C59E10070F25F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		A5A78866160C59E10070F25F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		A5A78868160C59E10070F25F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CoreAnimationSlider/CoreAnimationSlider-Prefix.pch";
+				INFOPLIST_FILE = "CoreAnimationSlider/CoreAnimationSlider-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		A5A78869160C59E10070F25F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CoreAnimationSlider/CoreAnimationSlider-Prefix.pch";
+				INFOPLIST_FILE = "CoreAnimationSlider/CoreAnimationSlider-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A5A78843160C59E10070F25F /* Build configuration list for PBXProject "CoreAnimationSlider" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5A78865160C59E10070F25F /* Debug */,
+				A5A78866160C59E10070F25F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A5A78867160C59E10070F25F /* Build configuration list for PBXNativeTarget "CoreAnimationSlider" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5A78868160C59E10070F25F /* Debug */,
+				A5A78869160C59E10070F25F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A5A78840160C59E10070F25F /* Project object */;
+}
