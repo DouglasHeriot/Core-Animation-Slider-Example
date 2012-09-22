@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A56723F4160DEEF1008FA27B /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A56723F3160DEEF1008FA27B /* QuartzCore.framework */; };
 		A5A7884E160C59E10070F25F /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5A7884D160C59E10070F25F /* Cocoa.framework */; };
 		A5A78858160C59E10070F25F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A5A78856160C59E10070F25F /* InfoPlist.strings */; };
 		A5A7885A160C59E10070F25F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A5A78859160C59E10070F25F /* main.m */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A56723F3160DEEF1008FA27B /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		A5A78849160C59E10070F25F /* CoreAnimationSlider.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreAnimationSlider.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5A7884D160C59E10070F25F /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		A5A78850160C59E10070F25F /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -39,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A56723F4160DEEF1008FA27B /* QuartzCore.framework in Frameworks */,
 				A5A7884E160C59E10070F25F /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -49,6 +52,7 @@
 		A5A7883E160C59E10070F25F = {
 			isa = PBXGroup;
 			children = (
+				A56723F3160DEEF1008FA27B /* QuartzCore.framework */,
 				A5A78853160C59E10070F25F /* CoreAnimationSlider */,
 				A5A7884C160C59E10070F25F /* Frameworks */,
 				A5A7884A160C59E10070F25F /* Products */,
@@ -304,6 +308,7 @@
 				A5A78869160C59E10070F25F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
