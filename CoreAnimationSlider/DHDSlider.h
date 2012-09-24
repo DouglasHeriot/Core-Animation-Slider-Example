@@ -10,4 +10,6 @@
 
 @interface DHDSlider : NSControl
 
+@property (nonatomic) double doubleValue; // 0…1
+
 @end
