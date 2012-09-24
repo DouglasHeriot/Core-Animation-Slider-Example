@@ -4,6 +4,8 @@
 //  Created by Sean Patrick O'Brien on 4/1/08.
 //  Copyright 2008 MolokoCacao. Written in 2010 by Fileability..
 //
+// https://github.com/fileability/Ingredients/blob/master/NSBezierPath+MCAdditions.m
+//
 
 #import <Cocoa/Cocoa.h>
 

@@ -183,6 +183,23 @@
 {
 	_doubleValue = doubleValue;
 	[self setNeedsLayout:YES];
+	[self noteFocusRingMaskChanged];
+}
+
+- (BOOL)acceptsFirstResponder
+{
+	return YES;
+}
+
+- (NSRect)focusRingMaskBounds
+{
+	return self.bounds;
+}
+
+- (void)drawFocusRingMask
+{
+	NSBezierPath *path = [NSBezierPath bezierPathWithRoundedRect: self.thumb.frame xRadius: 5.0 yRadius: 5.0];
+	[path fill];
 }
 
 @end
