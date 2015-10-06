@@ -17,6 +17,8 @@
 }
 @property (strong) CALayer *thumb;
 @property (nonatomic) BOOL active;
+
+@property (nonatomic) double internalDoubleValue; // 0…1
 @end
 
 @implementation DHDSlider
@@ -121,7 +123,7 @@
 	NSRect thumbFrame;
 	thumbFrame.size = thumbSize;
 	thumbFrame.origin.x = 0.0;
-	thumbFrame.origin.y = (self.bounds.size.height - thumbSize.height) * self.doubleValue;
+	thumbFrame.origin.y = (self.bounds.size.height - thumbSize.height) * self.internalDoubleValue;
 	self.thumb.frame = thumbFrame;
 	
 	[CATransaction commit];
@@ -150,7 +152,7 @@
 - (void)mouseDown:(NSEvent *)theEvent
 {
 	clickLocation = NSEvent.mouseLocation;
-	clickDoubleValue = self.doubleValue;
+	clickDoubleValue = self.internalDoubleValue;
 	
 	self.active = YES;
 }
@@ -181,7 +183,9 @@
 
 - (void)setDoubleValue:(double)doubleValue
 {
-	_doubleValue = doubleValue;
+	self.internalDoubleValue = doubleValue;
+	[super setDoubleValue:doubleValue];
+	
 	[self setNeedsLayout:YES];
 	[self noteFocusRingMaskChanged];
 }
