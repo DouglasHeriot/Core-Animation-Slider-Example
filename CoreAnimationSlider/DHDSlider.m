@@ -23,7 +23,7 @@
 
 @implementation DHDSlider
 
-- (id)initWithFrame:(NSRect)frame
+- (instancetype)initWithFrame:(NSRect)frame
 {
     self = [super initWithFrame:frame];
     if (self) {
@@ -50,9 +50,9 @@
 			
 			// Inner Glow/Shadow
 			NSShadow *innerGlow = [[NSShadow alloc] init];
-			[innerGlow setShadowBlurRadius:path.bounds.size.height / 3];
-			[innerGlow setShadowOffset:NSMakeSize(0.0, 0.0)];
-			[innerGlow setShadowColor:[NSColor colorWithDeviceWhite:0.0 alpha:0.2]];
+			innerGlow.shadowBlurRadius = path.bounds.size.height / 3;
+			innerGlow.shadowOffset = NSMakeSize(0.0, 0.0);
+			innerGlow.shadowColor = [NSColor colorWithDeviceWhite:0.0 alpha:0.2];
 			
 			[path fillWithInnerShadow:innerGlow];
 			
@@ -82,9 +82,9 @@
 			
 			// Inner Glow/Shadow
 			NSShadow *innerGlow = [[NSShadow alloc] init];
-			[innerGlow setShadowBlurRadius:path.bounds.size.height / 8];
-			[innerGlow setShadowOffset:NSMakeSize(0.0, -1.0)];
-			[innerGlow setShadowColor:[NSColor colorWithDeviceWhite:1.0 alpha:0.3]];
+			innerGlow.shadowBlurRadius = path.bounds.size.height / 8;
+			innerGlow.shadowOffset = NSMakeSize(0.0, -1.0);
+			innerGlow.shadowColor = [NSColor colorWithDeviceWhite:1.0 alpha:0.3];
 			
 			[path fillWithInnerShadow:innerGlow];
 			
@@ -131,7 +131,7 @@
 
 - (void)updateLayer
 {
-	self.thumb.shadowColor = [[NSColor blackColor] CGColor];
+	self.thumb.shadowColor = [NSColor blackColor].CGColor;
 	self.thumb.shadowOffset = CGSizeMake(0.0, -0.5);
 	self.thumb.shadowOpacity = 0.8;
 	
@@ -184,7 +184,7 @@
 - (void)setDoubleValue:(double)doubleValue
 {
 	self.internalDoubleValue = doubleValue;
-	[super setDoubleValue:doubleValue];
+	super.doubleValue = doubleValue;
 	
 	[self setNeedsLayout:YES];
 	[self noteFocusRingMaskChanged];

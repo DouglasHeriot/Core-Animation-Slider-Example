@@ -34,7 +34,7 @@ static void CGPathCallback(void *info, const CGPathElement *element)
 		case kCGPathElementAddQuadCurveToPoint:
 		{
 			// NOTE: This is untested.
-			NSPoint currentPoint = [path currentPoint];
+			NSPoint currentPoint = path.currentPoint;
 			NSPoint interpolatedPoint = NSMakePoint((currentPoint.x + 2*points[0].x) / 3, (currentPoint.y + 2*points[0].y) / 3);
 			[path curveToPoint:NSMakePoint(points[1].x, points[1].y) controlPoint1:interpolatedPoint controlPoint2:interpolatedPoint];
 			break;
@@ -68,7 +68,7 @@ static void CGPathCallback(void *info, const CGPathElement *element)
 	CGMutablePathRef thePath = CGPathCreateMutable();
 	if (!thePath) return nil;
 	
-	NSInteger elementCount = [self elementCount];
+	NSInteger elementCount = self.elementCount;
 	
 	// The maximum number of points is 3 for a NSCurveToBezierPathElement.
 	// (controlPoint1, controlPoint2, and endPoint)
@@ -136,18 +136,18 @@ static void CGPathCallback(void *info, const CGPathElement *element)
 	
 	NSSize offset = shadow.shadowOffset;
 	NSSize originalOffset = offset;
-	CGFloat radius = [shadow shadowBlurRadius];
+	CGFloat radius = shadow.shadowBlurRadius;
 	NSRect bounds = NSInsetRect(self.bounds, -(ABS(offset.width) + radius), -(ABS(offset.height) + radius));
 	offset.height += bounds.size.height;
 	shadow.shadowOffset = offset;
 	NSAffineTransform *transform = [NSAffineTransform transform];
-	if ([[NSGraphicsContext currentContext] isFlipped])
+	if ([NSGraphicsContext currentContext].flipped)
 		[transform translateXBy:0 yBy:bounds.size.height];
 	else
 		[transform translateXBy:0 yBy:-bounds.size.height];
 	
 	NSBezierPath *drawingPath = [NSBezierPath bezierPathWithRect:bounds];
-	[drawingPath setWindingRule:NSEvenOddWindingRule];
+	drawingPath.windingRule = NSEvenOddWindingRule;
 	[drawingPath appendBezierPath:self];
 	[drawingPath transformUsingAffineTransform:transform];
 	
@@ -170,7 +170,7 @@ static void CGPathCallback(void *info, const CGPathElement *element)
 	shadow.shadowColor = color;
 	NSBezierPath *path = [self copy];
 	NSAffineTransform *transform = [NSAffineTransform transform];
-	if ([[NSGraphicsContext currentContext] isFlipped])
+	if ([NSGraphicsContext currentContext].flipped)
 		[transform translateXBy:0 yBy:bounds.size.height];
 	else
 		[transform translateXBy:0 yBy:-bounds.size.height];
@@ -196,13 +196,13 @@ static void CGPathCallback(void *info, const CGPathElement *element)
 - (void)strokeInsideWithinRect:(NSRect)clipRect
 {
     NSGraphicsContext *thisContext = [NSGraphicsContext currentContext];
-    float lineWidth = [self lineWidth];
+    float lineWidth = self.lineWidth;
     
     /* Save the current graphics context. */
     [thisContext saveGraphicsState];
     
     /* Double the stroke width, since -stroke centers strokes on paths. */
-    [self setLineWidth:(lineWidth * 2.0)];
+    self.lineWidth = (lineWidth * 2.0);
     
     /* Clip drawing to this path; draw nothing outwith the path. */
     [self setClip];
@@ -217,7 +217,7 @@ static void CGPathCallback(void *info, const CGPathElement *element)
     
     /* Restore the previous graphics context. */
     [thisContext restoreGraphicsState];
-    [self setLineWidth:lineWidth];
+    self.lineWidth = lineWidth;
 }
 
 @end
